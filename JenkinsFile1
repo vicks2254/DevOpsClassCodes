@@ -39,7 +39,7 @@ mypipeline{
         stage('Package'){
             agent{label 'win_slave'}
             steps{
-                bat 'mvn package'
+                bat'mvn package'
             }
         }
     }
