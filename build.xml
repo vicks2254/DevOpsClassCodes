@@ -25,7 +25,7 @@
 		       uri="antlib:org.apache.maven.artifact.ant"
 		       classpathref="maven-ant-tasks.classpath" />
 		<path id="ant.contrib.classpath" path="${ant.home}/lib/ant-contrib.jar"/>
-		<typedef resource="net/sf/antcontrib/antlib.xml" classpathref="ant.contrib.classpath"/>
+		<typedef resource="net/sf/antcontrib/antlib.xml" classpathref="ant.contrib.classpath"/>()
 
 
   <!-- ====================================================================== -->
@@ -468,7 +468,7 @@
 	  <!-- run this target to generate the coverage reports -->
 	  <target name="coverage-report" depends="cover-test">
 	    <cobertura-report srcdir="${src.dir}" destdir="${cobertura.dir}"/>
-	  </target>
+	  </target>}
 
 
 </project>
